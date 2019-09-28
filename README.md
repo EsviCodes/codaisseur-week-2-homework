@@ -1,3 +1,7 @@
+# Note
+I forgot to commit to the master branch before creating a remote (git), so the default branch is the branch "shopping-chart". Oops! I could't figure out how to change it with the limit amount of time left. Hopefully it works just fine, like it does on my computer.
+
+
 # Homework Assignment
 
 This assignment covers the first week of the Intermediate Bootcamp. This repository contains 3 test files, each covering a single task. The order of the tasks does not matter. **You can complete them in any order.** Try to complete as many of them as you can. 
@@ -27,11 +31,11 @@ The app should be runnable simply by cloning the repository, installing dependen
 
 ### Assignment 1: ShoppingCart
 
-# DONE - 1. You must create a module named `ShoppingCart`. The module must export a `class`! In other words your `module.exports` is not an object, a string, or anything else, but only a class.
-# DONE - 1. Given a brand new instance of the class in a variable `cart`, calling `cart.getItems()` should return an empty array.
-# DONE - 1. The class should have a method `cart.addItem(itemName, quantity, price)`, which adds a new item to an internal array.
-# DONE - 1. After adding items, a call to `cart.getItems()` should return an array that includes the added items.
-# DONE - 1. Items in the array should be in this format:
+- 1. You must create a module named `ShoppingCart`. The module must export a `class`! In other words your `module.exports` is not an object, a string, or anything else, but only a class.
+- 1. Given a brand new instance of the class in a variable `cart`, calling `cart.getItems()` should return an empty array.
+- 1. The class should have a method `cart.addItem(itemName, quantity, price)`, which adds a new item to an internal array.
+- 1. After adding items, a call to `cart.getItems()` should return an array that includes the added items.
+- 1. Items in the array should be in this format:
     ```js
     {
       name: "Name of the item",
@@ -39,18 +43,18 @@ The app should be runnable simply by cloning the repository, installing dependen
       pricePerUnit: 99.99
     }
     ```
-# DONE - 1.  Calling `cart.clear()` should remove all items from the items array. Meaning, the next call to `getItems()` should return an empty array.
-# DONE - 1.  Calling `cart.total()` should return the total value of the shopping cart. Meaning, the sum of the cost of each cart item. The cost of each item is its `pricePerUnit` multiplied by the `quantity`. **Use `reduce`!**
+- 1.  Calling `cart.clear()` should remove all items from the items array. Meaning, the next call to `getItems()` should return an empty array.
+- 1.  Calling `cart.total()` should return the total value of the shopping cart. Meaning, the sum of the cost of each cart item. The cost of each item is its `pricePerUnit` multiplied by the `quantity`. **Use `reduce`!**
 
 ### Assignment 2: transform
 
-# DONE - 1.  You must create a module named `transform` that exports a function named `groupAdultsByAgeRange`. The test imports it like this:
+- 1.  You must create a module named `transform` that exports a function named `groupAdultsByAgeRange`. The test imports it like this:
     ```js
     const groupAdultsByAgeRange = require("./transform").groupAdultsByAgeRange
     ```
     _Note: This is a named export_
-# DONE - 1.  The exported `groupAdultsByAgeRange` should be a function.
-1.  The function will be called with an array of objects as its argument. The objects represent people, with a property `name` and a property `age`. Your function should group each person **over the age of 18** into age ranges. Here are a few examples:
+- 1.  The exported `groupAdultsByAgeRange` should be a function.
+- 1.  The function will be called with an array of objects as its argument. The objects represent people, with a property `name` and a property `age`. Your function should group each person **over the age of 18** into age ranges. Here are a few examples:
     ```js
     // Example 1
     groupAdultsByAgeRange([{name: "Henry", age: 9}, {name: "John", age: 20}])
@@ -65,9 +69,9 @@ The app should be runnable simply by cloning the repository, installing dependen
       '51 and older': [ { name: 'Hank', age: 60 } ] 
     }
     ```
-1. Notice that the groups are only added to the resulting object if they are not empty. Make sure your function does the same.
-1. You should use a combination of `filter` and `reduce`. If your solution uses `for`-loops instead of `reduce` for creating the **final object**, you will receive partial points. The use of `for`-loops is allowed, but try to construct the returned "grouping" object using `reduce`.
-1. These are the groups that your code needs to return. Use the text as the name of the property:
+- 1. Notice that the groups are only added to the resulting object if they are not empty. Make sure your function does the same.
+- 1. You should use a combination of `filter` and `reduce`. If your solution uses `for`-loops instead of `reduce` for creating the **final object**, you will receive partial points. The use of `for`-loops is allowed, but try to construct the returned "grouping" object using `reduce`.
+- 1. These are the groups that your code needs to return. Use the text as the name of the property:
     - `20 and younger`
     - `21-30`
     - `31-40`
@@ -76,7 +80,7 @@ The app should be runnable simply by cloning the repository, installing dependen
 
 ### Assignment 3: Asynchronous code
 
-# DONE - 1. You must create a module named `async-functions`. The test imports it with
+- 1. You must create a module named `async-functions`. The test imports it with
     ```js
     const {
       getTatooineResidents,
@@ -85,9 +89,9 @@ The app should be runnable simply by cloning the repository, installing dependen
     _Note: There should be **1** named export it should be a function
 
 2. The function `getTatooineResidents` 
-# DONE - Makes a request to the starwars api endpoint: https://swapi.co/api/planets/1/ to get info about the planet Tatooine
-# DONE - Feel free to use npm to install a http client like superagent to make the request
-# DONE - Making a request with superagent should create a Promise, return that promise from the function `getTatooineResidents`
-# DONE - Add a `then()` block to the promise you return from `getTatooineResidents`
-# DONE - `return` an array of urls for the residents of Tatooine (not the whole response) from the last `.then()` block in the promise chain
+- Makes a request to the starwars api endpoint: https://swapi.co/api/planets/1/ to get info about the planet Tatooine
+- Feel free to use npm to install a http client like superagent to make the request
+- Making a request with superagent should create a Promise, return that promise from the function `getTatooineResidents`
+- Add a `then()` block to the promise you return from `getTatooineResidents`
+- `return` an array of urls for the residents of Tatooine (not the whole response) from the last `.then()` block in the promise chain
    
