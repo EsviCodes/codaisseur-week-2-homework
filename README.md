@@ -39,8 +39,8 @@ The app should be runnable simply by cloning the repository, installing dependen
       pricePerUnit: 99.99
     }
     ```
-# DONE -1.  Calling `cart.clear()` should remove all items from the items array. Meaning, the next call to `getItems()` should return an empty array.
-1.  Calling `cart.total()` should return the total value of the shopping cart. Meaning, the sum of the cost of each cart item. The cost of each item is its `pricePerUnit` multiplied by the `quantity`. **Use `reduce`!**
+# DONE - 1.  Calling `cart.clear()` should remove all items from the items array. Meaning, the next call to `getItems()` should return an empty array.
+# DONE - 1.  Calling `cart.total()` should return the total value of the shopping cart. Meaning, the sum of the cost of each cart item. The cost of each item is its `pricePerUnit` multiplied by the `quantity`. **Use `reduce`!**
 
 ### Assignment 2: transform
 
@@ -76,7 +76,7 @@ The app should be runnable simply by cloning the repository, installing dependen
 
 ### Assignment 3: Asynchronous code
 
-1. You must create a module named `async-functions`. The test imports it with
+# DONE - 1. You must create a module named `async-functions`. The test imports it with
     ```js
     const {
       getTatooineResidents,
@@ -85,9 +85,9 @@ The app should be runnable simply by cloning the repository, installing dependen
     _Note: There should be **1** named export it should be a function
 
 2. The function `getTatooineResidents` 
-- Makes a request to the starwars api endpoint: https://swapi.co/api/planets/1/ to get info about the planet Tatooine
-- Feel free to use npm to install a http client like superagent to make the request
-- Making a request with superagent should create a Promise, return that promise from the function `getTatooineResidents`
-- Add a `then()` block to the promise you return from `getTatooineResidents`
-- `return` an array of urls for the residents of Tatooine (not the whole response) from the last `.then()` block in the promise chain
+# DONE - Makes a request to the starwars api endpoint: https://swapi.co/api/planets/1/ to get info about the planet Tatooine
+# DONE - Feel free to use npm to install a http client like superagent to make the request
+# DONE - Making a request with superagent should create a Promise, return that promise from the function `getTatooineResidents`
+# DONE - Add a `then()` block to the promise you return from `getTatooineResidents`
+# DONE - `return` an array of urls for the residents of Tatooine (not the whole response) from the last `.then()` block in the promise chain
    
