@@ -15,6 +15,10 @@ class ShoppingCart {
     };
     this.items.push(item);
   }
+
+  clear() {
+    this.items = [];
+  }
 }
 
 module.exports = ShoppingCart;
