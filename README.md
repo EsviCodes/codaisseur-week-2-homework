@@ -87,7 +87,7 @@ The app should be runnable simply by cloning the repository, installing dependen
 2. The function `getTatooineResidents` 
 # DONE - Makes a request to the starwars api endpoint: https://swapi.co/api/planets/1/ to get info about the planet Tatooine
 # DONE - Feel free to use npm to install a http client like superagent to make the request
-- Making a request with superagent should create a Promise, return that promise from the function `getTatooineResidents`
-- Add a `then()` block to the promise you return from `getTatooineResidents`
-- `return` an array of urls for the residents of Tatooine (not the whole response) from the last `.then()` block in the promise chain
+# DONE - Making a request with superagent should create a Promise, return that promise from the function `getTatooineResidents`
+# DONE - Add a `then()` block to the promise you return from `getTatooineResidents`
+# DONE - `return` an array of urls for the residents of Tatooine (not the whole response) from the last `.then()` block in the promise chain
    
