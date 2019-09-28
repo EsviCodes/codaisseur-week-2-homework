@@ -19,6 +19,14 @@ class ShoppingCart {
   clear() {
     this.items = [];
   }
+
+  total() {
+    return this.items.reduce(
+      (item, currentItem) =>
+        item + currentItem.quantity * currentItem.pricePerUnit,
+      0
+    );
+  }
 }
 
 module.exports = ShoppingCart;
