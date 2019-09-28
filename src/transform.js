@@ -1,16 +1,14 @@
 const groupAdultsByAgeRange = people => {
-  //console.log(people);
+  // returns an empty object if the people array is empty
   if (people.length === 0) {
     return {};
   }
 
-  // LOGIC - but now I have to make it work
+  /* 
+  Returns a single object with age-group properties. Children (people under 18 years are not taken into acount. If the people array only has children in it (like : people.filter(person => person.age < 18, it will return an empty object ({})
+  */
   return people.reduce((categories, currentPerson) => {
-    // console.log("Categories", categories);
-    // console.log("CurrentPerson", currentPerson);
-
     if (currentPerson.age >= 18 && currentPerson.age <= 20) {
-      //   console.log("20 and younger");
       if (categories["20 and younger"] === undefined) {
         categories["20 and younger"] = [currentPerson];
       } else {
@@ -18,7 +16,6 @@ const groupAdultsByAgeRange = people => {
       }
     }
     if (currentPerson.age > 20 && currentPerson.age <= 30) {
-      //   console.log("21-30");
       if (categories["21-30"] === undefined) {
         categories["21-30"] = [currentPerson];
       } else {
@@ -26,7 +23,6 @@ const groupAdultsByAgeRange = people => {
       }
     }
     if (currentPerson.age > 30 && currentPerson.age <= 40) {
-      //   console.log("31-40");
       if (categories["31-40"] === undefined) {
         categories["31-40"] = [currentPerson];
       } else {
@@ -34,7 +30,6 @@ const groupAdultsByAgeRange = people => {
       }
     }
     if (currentPerson.age > 40 && currentPerson.age <= 50) {
-      //   console.log("41-50");
       if (categories["41-50"] === undefined) {
         categories["41-50"] = [currentPerson];
       } else {
@@ -42,7 +37,6 @@ const groupAdultsByAgeRange = people => {
       }
     }
     if (currentPerson.age > 50) {
-      //   console.log("51 and older");
       if (categories["51 and older"] === undefined) {
         categories["51 and older"] = [currentPerson];
       } else {
