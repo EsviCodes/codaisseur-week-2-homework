@@ -1,5 +1,6 @@
 # Note
 I forgot to commit to the master branch before creating a remote (git), so the default branch is the branch "shopping-chart". Oops! I could't figure out how to change it with the limit amount of time left. Hopefully it works just fine, like it does on my computer.
+- Esther
 
 
 # Homework Assignment
